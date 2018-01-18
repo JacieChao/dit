@@ -7,13 +7,14 @@ import (
 )
 
 
+
 func Run(image string) {
 	cli, err := client.NewEnvClient()
 	if err != nil {
 		panic(err)
 	}
 	historydata, err := cli.ImageHistory(context.Background(), image)
-	fmt.Printf("show history : %+v", historydata)
-	//fmt.Printf("My name is %s, My age is %d", name, age)
-	//fmt.Printf("Image id is %s", image)
+	for _, his := range historydata {
+		fmt.Printf("history is %+v \n", his)
+	}
 }

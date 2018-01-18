@@ -14,7 +14,7 @@
 
 package main
 
-import "dockerimagetool/cmd"
+import "dit/cmd"
 
 func main() {
 	cmd.Execute()

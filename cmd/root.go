@@ -19,7 +19,7 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	"dockerimagetool/imp"
+	"dit/imp"
 )
 
 //var cfgFile string
@@ -27,7 +27,7 @@ var image string
 
 // RootCmd represents the base command when called without any subcommands
 var RootCmd = &cobra.Command{
-	Use:   "dockerimagetool",
+	Use:   "dit",
 	Short: "get docker file from image",
 	Long: `A longer description that spans multiple lines and likely contains
 examples and usage of using your application. For example:
